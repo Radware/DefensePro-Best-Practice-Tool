@@ -1,6 +1,6 @@
 # DefensePro-Best-Practice-Tool
 
-Overview:
+
 DefensePro Best-Practice Configurator is a tool which configures one or more DefensePro’s with best practice configuration using REST-API’s.
 The application uses a configuration file (Excel format), which will be filled by the customer and the field engineer with very basic information for example: application type, policy BW, CDN methods etc.
 This config file will be used by the application for deploying the best-practice configuration on the DefensePros automatically.
