@@ -1,0 +1,10 @@
+FROM python:3.8-alpine
+RUN apk add make automake gcc g++ subversion python3-dev
+ENV PYTHONPATH=/usr/lib/python3.8/site-packages
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+RUN mkdir -p ./DP_BP_App
+RUN mkdir -p ./DP_BP_App/Workbook
+COPY *.py ./DP_BP_App/
+WORKDIR DP_BP_App/
+CMD ["python3", "app.py"]
